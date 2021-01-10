@@ -81,13 +81,6 @@ sns.heatmap(cm, annot=True)
 
 `print(classification_report(y_test, y_predict))`
 
-| precision | recall | f1-score | support |
-| -------------|-----------|--------|----------|-------- |
-|        0.0  |     0.00  |  0.00  |   0.00   |   48 |
-|        1.0  |     0.58  |  1.00  |   0.73   |   66 |
-| ---------------------------------------------------|
-|avg / total  |     0.34  |  0.58  |   0.42   |   114 |
-
 |               | precision     | recall        | f1-score      | support       |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | 0.0           | 0.0           | 0.0           | 0.0           | 48            |
@@ -121,12 +114,6 @@ sns.heatmap(cm,annot=True,fmt="d")
 print(classification_report(y_test,y_predict))
 print(classification_report(y_test,y_predict))
 ```
-```precision    recall  f1-score   support```
-```
-        0.0       1.00      0.90      0.95        48
-        1.0       0.93      1.00      0.96        66
-```
-```avg / total       0.96      0.96      0.96       114```
 
 |               | precision     | recall        | f1-score      | support       |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -153,11 +140,6 @@ cm = confusion_matrix(y_test, grid_predictions)
 
 ```print(classification_report(y_test,grid_predictions))```
 ```precision    recall  f1-score   support```
-```
-        0.0       1.00      0.94      0.97        48
-        1.0       0.96      1.00      0.98        66
-```
-```avg / total       0.97      0.97      0.97       114```
 
 |               | precision     | recall        | f1-score      | support       |
 | ------------- | ------------- | ------------- | ------------- | ------------- |

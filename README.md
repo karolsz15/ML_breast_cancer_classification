@@ -55,6 +55,7 @@ cancer = load_breast_cancer()
 
 ## 4. MODEL TRAINING AND FINDING A PROBLEM SOLUTION
 ```
+In: 
 ...
 from sklearn.svm import SVC
 from sklearn.metrics import classification_report, confusion_matrix
@@ -63,6 +64,7 @@ svc_model = SVC()
 svc_model.fit(X_train, y_train)
 ```
 ```
+Out: 
 SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
   decision_function_shape='ovr', degree=3, gamma='auto', kernel='rbf',
   max_iter=-1, probability=False, random_state=None, shrinking=True,

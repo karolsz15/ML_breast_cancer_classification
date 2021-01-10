@@ -76,11 +76,12 @@ y_predict = svc_model.predict(X_test)
 cm = confusion_matrix(y_test, y_predict)
 sns.heatmap(cm, annot=True)
 ```
+
 ![GitHub Logo](/images/confusionmatrix1.png)
 
-```print(classification_report(y_test, y_predict))```
+`print(classification_report(y_test, y_predict))`
 
-             | precision | recall | f1-score | support
+| precision | recall | f1-score | support
 -------------|-----------|--------|----------|--------
         0.0  |     0.00  |  0.00  |   0.00   |   48
         1.0  |     0.58  |  1.00  |   0.73   |   66

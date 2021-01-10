@@ -127,7 +127,7 @@ print(classification_report(y_test,y_predict))
 `grid = GridSearchCV(SVC(),param_grid,refit=True,verbose=4)`
 `grid.fit(X_train_scaled,y_train)`
 `grid.best_params_`
-`*{'C': 10, 'gamma': 0.1, 'kernel': 'rbf'}*`
+*`{'C': 10, 'gamma': 0.1, 'kernel': 'rbf'}`*
 `grid.best_estimator_`
 `grid_predictions = grid.predict(X_test_scaled)`
 `cm = confusion_matrix(y_test, grid_predictions)`

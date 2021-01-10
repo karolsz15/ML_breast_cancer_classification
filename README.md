@@ -27,10 +27,10 @@
 
 ### 2.1. IMPORTING LIBRARIES
 `
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
+import pandas as pd  
+import numpy as np  
+import matplotlib.pyplot as plt  
+import seaborn as sns  
 `
 
 ### 2.2. IMPORTING THE DATA FROM THE SKLEARN LIBRARY (could have been also imported from the link provided in 'problem statement'))

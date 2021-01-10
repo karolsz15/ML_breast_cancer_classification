@@ -88,11 +88,11 @@ sns.heatmap(cm, annot=True)
 | ---------------------------------------------------|
 |avg / total  |     0.34  |  0.58  |   0.42   |   114 |
 
-| First Header  | Second Header | Second Header | Second Header | Second Header |
+|               | precision     | recall        | f1-score      | support       |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| 0.0           | 0.0           | 0.0           | 0.0           | 48            |
+| 1.0           | 0.58          | 1.00          |  0.73         | 66            |
+| avg / total   | 0.34          | 0.58          | 0.42          | 114           |
 
 ## 6. IMPROVING THE MODEL
 
@@ -128,6 +128,12 @@ print(classification_report(y_test,y_predict))
 ```
 ```avg / total       0.96      0.96      0.96       114```
 
+| First Header  | Second Header | Second Header | Second Header | Second Header |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+
 ## 7. IMPROVING THE MODEL - PART 2
 ```
 param_grid = {'C': [0.1, 1, 10, 100], 'gamma': [1, 0.1, 0.01, 0.001], 'kernel': ['rbf']} 
@@ -152,3 +158,9 @@ cm = confusion_matrix(y_test, grid_predictions)
         1.0       0.96      1.00      0.98        66
 ```
 ```avg / total       0.97      0.97      0.97       114```
+
+| First Header  | Second Header | Second Header | Second Header | Second Header |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |

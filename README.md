@@ -128,11 +128,11 @@ print(classification_report(y_test,y_predict))
 ```
 ```avg / total       0.96      0.96      0.96       114```
 
-| First Header  | Second Header | Second Header | Second Header | Second Header |
+|               | precision     | recall        | f1-score      | support       |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| 0.0           | 1.00          | 0.90          | 0.95          | 48            |
+| 1.0           | 0.93          | 1.00          | 0.96          | 66            |
+| avg / total   | 0.96          | 0.96          | 0.96          | 114           |
 
 ## 7. IMPROVING THE MODEL - PART 2
 ```
@@ -159,8 +159,8 @@ cm = confusion_matrix(y_test, grid_predictions)
 ```
 ```avg / total       0.97      0.97      0.97       114```
 
-| First Header  | Second Header | Second Header | Second Header | Second Header |
+|               | precision     | recall        | f1-score      | support       |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| 0.0           | 1.00          | 0.94          | 0.97          | 48            |
+| 1.0           | 0.96          | 1.00          | 0.98          | 66            |
+| avg / total   | 0.97          | 0.97          | 0.97          | 114           |

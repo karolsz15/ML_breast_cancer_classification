@@ -79,12 +79,13 @@ sns.heatmap(cm, annot=True)
 ![GitHub Logo](/images/confusionmatrix1.png)
 
 ```print(classification_report(y_test, y_predict))```
-```precision    recall  f1-score   support```
-```
-        0.0       0.00      0.00      0.00        48
-        1.0       0.58      1.00      0.73        66
-```
-```avg / total       0.34      0.58      0.42       114```
+
+             | precision | recall | f1-score | support
+-------------|-----------|--------|----------|--------
+        0.0  |     0.00  |  0.00  |   0.00   |   48
+        1.0  |     0.58  |  1.00  |   0.73   |   66
+------------------------------------------------------
+avg / total  |     0.34  |  0.58  |   0.42   |   114
 
 ## 6. IMPROVING THE MODEL
 

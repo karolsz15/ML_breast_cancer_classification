@@ -34,10 +34,10 @@ import seaborn as sns
 ```
 
 ### 2.2. IMPORTING THE DATA FROM THE SKLEARN LIBRARY (could have been also imported from the link provided in 'problem statement'))
-`
-from sklearn.datasets import load_breast_cancer\
-cancer = load_breast_cancer()\
-`
+```
+from sklearn.datasets import load_breast_cancer
+cancer = load_breast_cancer()
+```
 
 ## 3. VISUALIZING THE DATA
 
@@ -54,37 +54,37 @@ cancer = load_breast_cancer()\
 ![GitHub Logo](/images/datavisualisation4.png)
 
 ## 4. MODEL TRAINING AND FINDING A PROBLEM SOLUTION
-`
+```
 ...
-from sklearn.svm import SVC\ 
-from sklearn.metrics import classification_report, confusion_matrix\
-\
-svc_model = SVC()\
-svc_model.fit(X_train, y_train)\
-`
-`
-SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,\
-  decision_function_shape='ovr', degree=3, gamma='auto', kernel='rbf',\
-  max_iter=-1, probability=False, random_state=None, shrinking=True,\
-  tol=0.001, verbose=False)\
-`
+from sklearn.svm import SVC
+from sklearn.metrics import classification_report, confusion_matrix
+
+svc_model = SVC()
+svc_model.fit(X_train, y_train)
+```
+```
+SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+```
 
 ## 5. EVALUATING THE MODEL
 
-`
-y_predict = svc_model.predict(X_test)\
-cm = confusion_matrix(y_test, y_predict)\
-sns.heatmap(cm, annot=True)\
-`
+```
+y_predict = svc_model.predict(X_test)
+cm = confusion_matrix(y_test, y_predict)
+sns.heatmap(cm, annot=True)
+```
 ![GitHub Logo](/images/confusionmatrix1.png)
 
-`print(classification_report(y_test, y_predict))`
-`precision    recall  f1-score   support`
-`
+```print(classification_report(y_test, y_predict))```
+```precision    recall  f1-score   support```
+```
         0.0       0.00      0.00      0.00        48
         1.0       0.58      1.00      0.73        66
-`
-`avg / total       0.34      0.58      0.42       114`
+```
+```avg / total       0.34      0.58      0.42       114```
 
 ## 6. IMPROVING THE MODEL
 
@@ -92,33 +92,33 @@ sns.heatmap(cm, annot=True)\
 ![GitHub Logo](/images/featurescaling.png)
 
 ### 6.2. Training the model
-`
-...\
-from sklearn.svm import SVC\
-from sklearn.metrics import classification_report, confusion_matrix\
-\
-svc_model = SVC()\
-svc_model.fit(X_train_scaled, y_train)\
-`
-`
-y_predict = svc_model.predict(X_test_scaled)\
-cm = confusion_matrix(y_test, y_predict)\
-\
-sns.heatmap(cm,annot=True,fmt="d")\
-`
+```
+...
+from sklearn.svm import SVC
+from sklearn.metrics import classification_report, confusion_matrix
+
+svc_model = SVC()
+svc_model.fit(X_train_scaled, y_train)
+```
+```
+y_predict = svc_model.predict(X_test_scaled)
+cm = confusion_matrix(y_test, y_predict)
+
+sns.heatmap(cm,annot=True,fmt="d")
+```
 ![GitHub Logo](/images/confusionmatrix2.png)
 
-`print(classification_report(y_test,y_predict))`
-`
-print(classification_report(y_test,y_predict))\
-print(classification_report(y_test,y_predict))\
-`
-`precision    recall  f1-score   support`
-`
+```print(classification_report(y_test,y_predict))```
+```
+print(classification_report(y_test,y_predict))
+print(classification_report(y_test,y_predict))
+```
+```precision    recall  f1-score   support```
+```
         0.0       1.00      0.90      0.95        48
         1.0       0.93      1.00      0.96        66
-`
-`avg / total       0.96      0.96      0.96       114`
+```
+```avg / total       0.96      0.96      0.96       114```
 
 ## 7. IMPROVING THE MODEL - PART 2
 
@@ -137,8 +137,8 @@ print(classification_report(y_test,y_predict))\
 
 `print(classification_report(y_test,grid_predictions))`
 `precision    recall  f1-score   support`
-`
+``
         0.0       1.00      0.94      0.97        48
         1.0       0.96      1.00      0.98        66
-`
+``
 `avg / total       0.97      0.97      0.97       114`

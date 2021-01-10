@@ -110,10 +110,6 @@ sns.heatmap(cm,annot=True,fmt="d")
 ![GitHub Logo](/images/confusionmatrix2.png)
 
 ```print(classification_report(y_test,y_predict))```
-```
-print(classification_report(y_test,y_predict))
-print(classification_report(y_test,y_predict))
-```
 
 |               | precision     | recall        | f1-score      | support       |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -139,7 +135,6 @@ cm = confusion_matrix(y_test, grid_predictions)
 ![GitHub Logo](/images/confusionmatrix3.png)
 
 ```print(classification_report(y_test,grid_predictions))```
-```precision    recall  f1-score   support```
 
 |               | precision     | recall        | f1-score      | support       |
 | ------------- | ------------- | ------------- | ------------- | ------------- |

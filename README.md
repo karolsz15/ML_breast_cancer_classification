@@ -121,24 +121,24 @@ print(classification_report(y_test,y_predict))
 ```avg / total       0.96      0.96      0.96       114```
 
 ## 7. IMPROVING THE MODEL - PART 2
-
-`param_grid = {'C': [0.1, 1, 10, 100], 'gamma': [1, 0.1, 0.01, 0.001], 'kernel': ['rbf']} `
-`from sklearn.model_selection import GridSearchCV`
-`grid = GridSearchCV(SVC(),param_grid,refit=True,verbose=4)`
-`grid.fit(X_train_scaled,y_train)`
-`grid.best_params_`
-*`{'C': 10, 'gamma': 0.1, 'kernel': 'rbf'}`*
-`grid.best_estimator_`
-`grid_predictions = grid.predict(X_test_scaled)`
-`cm = confusion_matrix(y_test, grid_predictions)`
-
-`sns.heatmap(cm, annot=True)`
+```
+param_grid = {'C': [0.1, 1, 10, 100], 'gamma': [1, 0.1, 0.01, 0.001], 'kernel': ['rbf']} 
+from sklearn.model_selection import GridSearchCV
+grid = GridSearchCV(SVC(),param_grid,refit=True,verbose=4)
+grid.fit(X_train_scaled,y_train)
+grid.best_params_
+{'C': 10, 'gamma': 0.1, 'kernel': 'rbf'}
+grid.best_estimator_
+grid_predictions = grid.predict(X_test_scaled)
+cm = confusion_matrix(y_test, grid_predictions)
+```
+```sns.heatmap(cm, annot=True)```
 ![GitHub Logo](/images/confusionmatrix3.png)
 
-`print(classification_report(y_test,grid_predictions))`
-`precision    recall  f1-score   support`
-``
+```print(classification_report(y_test,grid_predictions))```
+```precision    recall  f1-score   support```
+```
         0.0       1.00      0.94      0.97        48
         1.0       0.96      1.00      0.98        66
-``
-`avg / total       0.97      0.97      0.97       114`
+```
+```avg / total       0.97      0.97      0.97       114```

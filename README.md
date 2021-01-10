@@ -27,12 +27,9 @@
 
 ### 2.1. IMPORTING LIBRARIES
 `
-import pandas as pd  
-
-import numpy as np  
-
-import matplotlib.pyplot as plt  
-
+import pandas as pd  \n
+import numpy as np
+import matplotlib.pyplot as plt
 import seaborn as sns  
 `
 

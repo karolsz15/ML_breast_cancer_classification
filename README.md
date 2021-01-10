@@ -88,6 +88,12 @@ sns.heatmap(cm, annot=True)
 | ---------------------------------------------------|
 |avg / total  |     0.34  |  0.58  |   0.42   |   114 |
 
+| First Header  | Second Header | Second Header | Second Header | Second Header |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+
 ## 6. IMPROVING THE MODEL
 
 ### 6.1. Feature scaling
